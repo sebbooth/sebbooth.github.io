@@ -1,16 +1,39 @@
+// Main container
 .navbar-container {
+  position: fixed; // Fix at the top
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; // Vertically center content
+  justify-content: space-between; // Distribute space between the logo, links, and ThemeSetter
+  z-index: 100; // Ensure Navbar is on top of other elements
+}
 
-  ul {
-    flex: 1;
-    display: flex;
+// Logo
+.text-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    li {
-      a {
-        text-decoration: none;
-      }
+// Navigation Links
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .navbar-link {
+    margin-left: 20px; // Adjust spacing as needed
+
+    a {
+      text-decoration: none;
     }
   }
+}
+
+// Add this to ensure the content below starts after the fixed Navbar
+.navbar-spacer {
+  height: 60px; // Adjust this height to match your Navbar's height
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "OpenGL Demo Framework",
+    "description": "Framework for testing and demonstrating different OpenGL rendering techniques including a model loader, terrain renderer and interactive components with ImGui.",
+    "images": ["openGLGrass.png", "openGL.gif"],
+    "techStack": ["C++", "OpenGL", "3D Graphics"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/OpenGL-Demo-Sandbox"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Interactive Geometry Remeshing",
+    "description": "A Python implementation of Pierre Alliez, Mark Meyer, and Mathieu Desbrun's research paper \"Interactive Geometry Remeshing.\"",
+    "images": ["remeshing.png"],
+    "techStack": ["Python", "NumPy", "3D Graphics"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/Interactive-Geometry-Remeshing"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Creativity Support Tools",
+    "description": "Portfolio of work done for my class, CSC485E; \"Topics in Systems: Creativity Support Tools.\" Features a series of projects based around tangible user interfaces and supporting creative processes.",
+    "images": ["creativitySupport.png"],
+    "techStack": ["Python", "Arduino", "Electronics"],
+    "links": {
+      "website": "https://onlineacademiccommunity.uvic.ca/sebbooth/"
+    }
+  }
+]

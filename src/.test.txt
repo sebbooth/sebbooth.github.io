@@ -1,0 +1,47 @@
+My current file structure is as follows:
+```
+react-portfolio/
+    public/
+    src/
+        assets/
+            images/
+                projects/
+                    openGLGrass.png
+                    creativitySupport.png
+                    ...
+            styles/
+                fonts.scss
+                ...
+        components/
+            About/
+            Contact/
+            Projects/
+                Projects.jsx
+                Projects.scss
+            ...
+            index.js
+        data/
+            about.json
+            projects.json
+        App.jsx
+        index.scss
+        main.jsx
+```
+
+And my `projects.json` contains project objects like this one:
+
+```
+{
+    "id": 1,
+    "title": "OpenGL Demo Framework",
+    "description": "Framework for testing and demonstrating different OpenGL rendering techniques including a model loader, terrain renderer and interactive components with ImGui.",
+    "images": ["openGLGrass.png", "openGL.gif"],
+    "techStack": ["C++", "OpenGL", "3D Graphics"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/OpenGL-Demo-Sandbox"
+    }
+},
+```
+
+Please write me code for a ProjectCard component that can use the data from my projects.json and display it to the webpage.
+
