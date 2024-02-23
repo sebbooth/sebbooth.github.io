@@ -1,21 +1,16 @@
 import "./ThemeSetter.scss";
-
-import { useState } from "react";
+import { ThemeContext } from "../../../../contexts/ThemeContext";
+import { useContext } from "react";
 
 const ThemeSetter = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark");
-  };
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
   return (
     <div>
       <button
         aria-label="Toggle Dark Mode"
         className="toggle-button"
-        onClick={toggleTheme}
+        onClick={toggleDarkMode}
       >
         {isDarkMode ? <h2>Dark</h2> : <h2>Light</h2>}
       </button>

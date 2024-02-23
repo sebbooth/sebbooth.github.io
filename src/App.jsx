@@ -1,13 +1,17 @@
 import { Contact, About, Navbar, Projects, Timeline } from "./components";
+import React from "react";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <About />
-      <Timeline />
-      <Projects />
-      <Contact />
+      <ThemeProvider>
+        <Navbar />
+        <About />
+        <Timeline />
+        <Projects />
+        <Contact />
+      </ThemeProvider>
     </>
   );
 }

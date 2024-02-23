@@ -1,5 +1,32 @@
+@import "./styles/theme-variables.scss";
+
+@mixin darkThemed() {
+  div {
+    background-color: $d-bg-color-1;
+    color: $d-text-color-1;
+    transition: 0.3s all;
+  }
+}
+
+@mixin lightThemed() {
+  div {
+    background-color: $l-bg-color-1;
+    color: $l-text-color-1;
+    transition: 0.3s all;
+  }
+}
+.light-theme {
+  @include lightThemed();
+}
+
+.dark-theme {
+  @include darkThemed();
+}
+
 body {
   margin: 0px;
+  font-family: "Fira Sans";
+  font-size: 2rem;
 }
 
 $dark-mode-text: #eeeeee;
@@ -10,7 +37,6 @@ $light-mode-bg: #eeeeee;
 :root {
   background-color: $light-mode-bg;
   color: $light-mode-text;
-  transition: 0.3s all;
 
   &.dark {
     background-color: $dark-mode-bg;

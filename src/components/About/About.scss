@@ -1,0 +1,28 @@
+.about-canvas {
+  position: absolute;
+  z-index: 0;
+}
+
+.about-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-title {
+    pointer-events: none;
+
+    font-family: "Pixelify Sans";
+    font-weight: 900;
+    font-size: 6rem;
+    color: white;
+    z-index: 99;
+    background-color: transparent;
+
+    span {
+      font-family: "Micro 5";
+      font-size: 3rem;
+    }
+  }
+}
