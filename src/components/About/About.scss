@@ -1,3 +1,5 @@
+@import "../../styles/theme-variables.scss";
+
 .about-canvas-container {
   position: absolute;
   display: flex;
@@ -21,7 +23,7 @@
   .about-links {
     pointer-events: none;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 4rem;
     z-index: 99;
     background-color: transparent;
 
@@ -29,14 +31,27 @@
       font-family: "Micro 5";
       font-size: 3rem;
     }
+  }
 
+  .dark-icons {
     a {
-      color: white;
+      color: $d-bg-color-1;
       pointer-events: auto;
       transition: 0.5s all;
     }
     a:hover {
-      color: black;
+      color: $d-text-color-1;
+    }
+  }
+
+  .light-icons {
+    a {
+      color: $l-bg-color-1;
+      pointer-events: auto;
+      transition: 0.5s all;
+    }
+    a:hover {
+      color: $l-text-color-1;
     }
   }
 }

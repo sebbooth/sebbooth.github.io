@@ -2,6 +2,8 @@ import React from "react";
 
 import { IoSchool as SchoolIcon } from "react-icons/io5";
 import { MdWork as WorkIcon } from "react-icons/md";
+import { RiComputerLine as SoftwareIcon } from "react-icons/ri";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,19 +17,35 @@ import "./Timeline.scss";
 const Timeline = () => {
   let workIconStyle = { background: "#f0aaf0", color: "#000000" };
   let schoolIconStyle = { background: "#aaf0f0", color: "#000000" };
+  let softwareIconStyle = { background: "#f0f0aa", color: "#000000" };
+
   return (
     <div id="Timeline">
+      <div className="spacer" />
       <h1>Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
-          let isWorkIcon = element.icon === "work";
           return (
             <VerticalTimelineElement
               key={element.id}
               date={element.date}
               dateClassName="date"
-              icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-              iconStyle={isWorkIcon ? workIconStyle : schoolIconStyle}
+              icon={
+                element.icon == "work" ? (
+                  <WorkIcon />
+                ) : element.icon == "school" ? (
+                  <SchoolIcon />
+                ) : (
+                  <SoftwareIcon />
+                )
+              }
+              iconStyle={
+                element.icon == "work"
+                  ? workIconStyle
+                  : element.icon == "school"
+                  ? schoolIconStyle
+                  : softwareIconStyle
+              }
             >
               <h3 className="verticle-timeline-element-title">
                 {element.title}

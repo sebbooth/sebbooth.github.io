@@ -5,7 +5,7 @@
     "location": "DataAnnotation",
     "description": "I generate diverse coding challenges to train AI chatbots, covering multiple programming paradigms and languages such as Python, C++, JavaScript, and React, while also crafting clear and accurate responses to simulate real-world coding interactions and conducting comprehensive assessments of AI-generated code for accuracy, efficiency, and adherence to requirements.",
     "date": "Jan 2024 - Present",
-    "icon": "work"
+    "icon": "software"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "location": "Trulioo",
     "description": "Provided ongoing technical support for troubleshooting and optimization with Trulioo’s REST API to support client developer teams throughout onboarding process.\nEstablished SOPs for internal processes and developed external resources for product and API testing.\nCollaborated across teams on product testing/feedback, QA, and client due diligence.\nLeveraged programming skills to test SDK compatibility with React and automate tasks with Python.",
     "date": "May 2022 – Dec 2022",
-    "icon": "work"
+    "icon": "software"
   },
   {
     "id": 4,

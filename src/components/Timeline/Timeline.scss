@@ -1,21 +1,36 @@
-.vertical-timeline-element-content {
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
-}
+#Timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.verticle-timeline-element-title {
-  font-size: 1.5rem;
-  margin: 0px;
-}
+  .spacer {
+    height: 10vh;
+  }
 
-.verticle-timeline-element-subtitle {
-  font-size: 1rem;
+  h1 {
+    font-size: 4rem;
+  }
 
-  margin: 0px;
-  margin-top: 1rem;
-}
+  .vertical-timeline-element-content {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+  }
 
-.description {
-  margin: 0px;
-  color: #404040;
+  .verticle-timeline-element-title {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+
+  .verticle-timeline-element-subtitle {
+    font-size: 1rem;
+
+    margin: 0px;
+    margin-top: 1rem;
+  }
+
+  .description {
+    margin: 0px;
+    color: #404040;
+  }
 }

@@ -28,5 +28,55 @@
     "links": {
       "website": "https://onlineacademiccommunity.uvic.ca/sebbooth/"
     }
+  },
+  {
+    "id": 4,
+    "title": "Python .obj Viewer",
+    "description": "3D graphics using only python with NumPy and Pygame. Allows for viewing of simple .obj files without the aid of any 3D graphics APIs.",
+    "images": ["pygameObjViewer.png"],
+    "techStack": ["Python", "NumPy", "Pygame"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/python3Dviewer"
+    }
+  },
+  {
+    "id": 5,
+    "title": "SFML Raycaster",
+    "description": "Simple Raycaster with made C++ and SFML. Handles basic player-object collisions, textured wall rendering and features a mini-map demonstrating the casting of rays.",
+    "images": ["raycaster.png"],
+    "techStack": ["C++", "SFML"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/raycaster-sfml"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Isometric Platformer",
+    "description": "Simple framework for an isometric style platformer, coded in Python using Pygame.",
+    "images": ["isoPlatformer.png"],
+    "techStack": ["Python", "Pygame"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/raycaster-sfml"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Arduino R2R DAC",
+    "description": "Resistor-ladder digital to analog convertor made with arduino uno. Made to generate various analog waveforms using only digital outputs; sine, saw, square etc.",
+    "images": ["r2rDac.png"],
+    "techStack": ["Arduino", "Electronics"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/Arduino-DAC"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Algorithmic Trader with Text-Alerts",
+    "description": "Program using RSI-based trading strategy that sends text-alerts for buy/sell signals using the Twilio SMS API.",
+    "images": ["algoTrader.png"],
+    "techStack": ["Python", "Pandas", "Twilio"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/algotrader"
+    }
   }
 ]
