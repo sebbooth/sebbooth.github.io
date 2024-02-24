@@ -1,0 +1,15 @@
+.text-logo {
+  margin: 0px;
+  height: 10vh;
+  width: 10vh;
+
+  .logo {
+    position: absolute;
+    flex-shrink: 0;
+    z-index: 55;
+  }
+  .hidden {
+    opacity: 0;
+    z-index: 40;
+  }
+}

@@ -1,6 +1,7 @@
-import React, { useEffect, useState, lazy, Suspense } from "react";
-const Spline = lazy(() => import("@splinetool/react-spline"));
+import React, { useEffect, useState } from "react";
 import { ProjectCard } from "./components";
+import { SplineCanvas } from "../";
+
 import "./Projects.scss";
 
 import data from "../../data/projects.json";
@@ -18,12 +19,12 @@ const Projects = () => {
 
   return (
     <section id="Projects" className="projects-section">
-      <Suspense fallback={<div>Loading...</div>}>
-        <Spline
-          className="projects-background"
-          scene="https://prod.spline.design/mM14Iwyb5fmtifQc/scene.splinecode"
-        />
-      </Suspense>
+      <SplineCanvas
+        attributes={{
+          className: "projects-background",
+          scene: "https://prod.spline.design/mM14Iwyb5fmtifQc/scene.splinecode",
+        }}
+      />
       <div className="projects-container">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

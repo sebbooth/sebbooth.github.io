@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { lazy, Suspense } from "react";
-const Spline = lazy(() => import("@splinetool/react-spline"));
+import { SplineCanvas } from "../";
 
 import "./About.scss";
 
@@ -13,23 +11,16 @@ const About = () => {
 
   let canvasStyle = { width: "100vw", height: "80vh" };
 
-  const [isSceneLoading, setIsSceneLoading] = useState(true);
-
-  const handleSceneLoad = () => {
-    setIsSceneLoading(false);
-  };
-
   return (
     <>
       <div id="About" className="about-canvas-container">
-        {isSceneLoading && <p>Loading...</p>}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Spline
-            scene="https://prod.spline.design/D5-XcPCHqJB7IpSR/scene.splinecode"
-            style={canvasStyle}
-            onLoad={handleSceneLoad}
-          />
-        </Suspense>
+        <SplineCanvas
+          attributes={{
+            scene:
+              "https://prod.spline.design/D5-XcPCHqJB7IpSR/scene.splinecode",
+            style: { canvasStyle },
+          }}
+        />
       </div>
 
       <div className="about-container">
