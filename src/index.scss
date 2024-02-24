@@ -1,45 +1,18 @@
 @import "./styles/theme-variables.scss";
 
-@mixin darkThemed() {
-  div {
-    background-color: $d-bg-color-1;
-    color: $d-text-color-1;
-    transition: 0.3s all;
-  }
+.light-theme-primary {
+  background: $l-bg-color-1;
+  color: $l-text-color-1;
+  transition: background 0.5s, color 0.5s;
 }
 
-@mixin lightThemed() {
-  div {
-    background-color: $l-bg-color-1;
-    color: $l-text-color-1;
-    transition: 0.3s all;
-  }
-}
-.light-theme {
-  @include lightThemed();
-}
-
-.dark-theme {
-  @include darkThemed();
+.dark-theme-primary {
+  background: $d-bg-color-1;
+  color: $d-text-color-1;
+  transition: background 0.5s, color 0.5s;
 }
 
 body {
   margin: 0px;
   font-family: "Fira Sans";
-  font-size: 2rem;
-}
-
-$dark-mode-text: #eeeeee;
-$dark-mode-bg: #202020;
-$light-mode-text: #202020;
-$light-mode-bg: #eeeeee;
-
-:root {
-  background-color: $light-mode-bg;
-  color: $light-mode-text;
-
-  &.dark {
-    background-color: $dark-mode-bg;
-    color: $dark-mode-text;
-  }
 }

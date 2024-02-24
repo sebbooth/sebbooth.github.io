@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Software Developer – AI Trainer",
+    "location": "DataAnnotation",
+    "description": "I generate diverse coding challenges to train AI chatbots, covering multiple programming paradigms and languages such as Python, C++, JavaScript, and React, while also crafting clear and accurate responses to simulate real-world coding interactions and conducting comprehensive assessments of AI-generated code for accuracy, efficiency, and adherence to requirements.",
+    "date": "Jan 2024 - Present",
+    "icon": "work"
+  },
+  {
+    "id": 2,
+    "title": "Engineering B.Sc. in Computer Science",
+    "location": "University of Victoria",
+    "description": "lorem ipsum",
+    "date": "Sep 2020 – Dec 2023",
+    "icon": "school"
+  },
+  {
+    "id": 3,
+    "title": "Implementation Intern",
+    "location": "Trulioo",
+    "description": "Provided ongoing technical support for troubleshooting and optimization with Trulioo’s REST API to support client developer teams throughout onboarding process.\nEstablished SOPs for internal processes and developed external resources for product and API testing.\nCollaborated across teams on product testing/feedback, QA, and client due diligence.\nLeveraged programming skills to test SDK compatibility with React and automate tasks with Python.",
+    "date": "May 2022 – Dec 2022",
+    "icon": "work"
+  },
+  {
+    "id": 4,
+    "title": "Warehouse Associate",
+    "location": "Visions Electronics",
+    "description": "Managed incoming and outgoing shipments between warehouses, stores, vendors, and customers.\nMonitored inventory and logged data into inventory management software.\nResolved issues and concerns directly with customers regarding product shipments and deliveries.\nInstalled products and systems in customers’ homes and businesses.",
+    "date": "Sep 2019 – Aug 2020",
+    "icon": "work"
+  }
+]

@@ -1,34 +1,50 @@
-// Main container
 .navbar-container {
-  position: fixed; // Fix at the top
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  height: 10vh;
+  backdrop-filter: blur(5px);
   display: flex;
-  align-items: center; // Vertically center content
-  justify-content: space-between; // Distribute space between the logo, links, and ThemeSetter
-  z-index: 100; // Ensure Navbar is on top of other elements
-}
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
 
-// Logo
-.text-logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+  .text-logo {
+    margin: 0px;
+    height: 10vh;
+    width: 10vh;
+  }
 
-// Navigation Links
-.navbar-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  .navbar-link {
-    margin-left: 20px; // Adjust spacing as needed
+  .navbar-links {
+    margin-left: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
 
     a {
       text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.5s;
+      margin: 0px 2px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .dark-links {
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .light-links {
+    a {
+      color: #000000;
     }
   }
 }

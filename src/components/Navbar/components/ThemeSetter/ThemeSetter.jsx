@@ -6,15 +6,19 @@ const ThemeSetter = () => {
   const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
   return (
-    <div>
+    <>
       <button
         aria-label="Toggle Dark Mode"
-        className="toggle-button"
+        className={isDarkMode ? "toggle dark-button" : "toggle light-button"}
         onClick={toggleDarkMode}
       >
-        {isDarkMode ? <h2>Dark</h2> : <h2>Light</h2>}
+        <p>Light</p>
+        <p>Dark</p>
+        <div className={isDarkMode ? "toggle-left" : "toggle-right"}>
+          <div className="toggle-switch"></div>
+        </div>
       </button>
-    </div>
+    </>
   );
 };
 

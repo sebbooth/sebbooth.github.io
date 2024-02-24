@@ -3,7 +3,7 @@ import "../index.scss"; // Your main SCSS file
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -11,7 +11,9 @@ const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
-      <div className={isDarkMode ? "dark-theme" : "light-theme"}>
+      <div
+        className={isDarkMode ? "dark-theme-primary" : "light-theme-primary"}
+      >
         {children}
       </div>
     </ThemeContext.Provider>

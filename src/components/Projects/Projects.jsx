@@ -17,7 +17,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="projects-section">
+    <section id="Projects" className="projects-section">
       {/* ... other layout elements */}
       <div className="projects-container">
         {projects.map((project) => (
