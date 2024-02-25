@@ -1,10 +1,19 @@
-import { Contact, About, Hero, Navbar, Projects, Timeline } from "./components";
+import {
+  Contact,
+  About,
+  Hero,
+  Navbar,
+  Projects,
+  Timeline,
+  Preloader,
+} from "./components";
 import React from "react";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
     <>
+      <Preloader />
       <ThemeProvider>
         <Navbar />
         <Hero />
