@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Tilt tiltMaxAngleX="10" tiltMaxAngleY="10" className="project-card">
       <img
-        src={`/assets/images/projectsOriginalSize/${project.images[0]}`}
+        src={`/assets/images/projects/${project.images[0]}`}
         alt={project.title}
         className="project-image"
       />
