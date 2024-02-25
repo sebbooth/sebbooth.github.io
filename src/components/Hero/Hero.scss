@@ -1,6 +1,6 @@
 @import "../../styles/theme-variables.scss";
 
-.about-canvas-container {
+.hero-canvas-container {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
   width: 100vw;
 }
 
-.about-container {
+.hero-container {
   padding-top: 10vh;
   color: white;
 
@@ -22,7 +22,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  .about-links {
+  .hero-links {
     pointer-events: none;
     font-weight: 900;
     font-size: 4rem;

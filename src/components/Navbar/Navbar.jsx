@@ -27,7 +27,6 @@ const Navbar = () => {
         </div>
         <ThemeSetter />
       </div>
-      <div className="navbar-spacer"></div>
     </>
   );
 };

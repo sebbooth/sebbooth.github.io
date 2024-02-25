@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <>
-      <div id="Hero" className="about-canvas-container">
+      <div id="Hero" className="hero-canvas-container">
         <SplineCanvas
           attributes={{
             scene:
@@ -23,10 +23,10 @@ const Hero = () => {
         />
       </div>
 
-      <div className="about-container">
+      <div className="hero-container">
         <div
           className={
-            isDarkMode ? "about-links dark-icons" : "about-links light-icons"
+            isDarkMode ? "hero-links dark-icons" : "hero-links light-icons"
           }
         >
           <a href="https://github.com/sebbooth">
