@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
+import { useContext } from "react";
 import { ProjectCard } from "./components";
 import { SplineCanvas } from "../";
+import { ThemeContext } from "../../contexts/ThemeContext";
+
+import projects from "../../data/projects.json";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./Projects.scss";
 
-import data from "../../data/projects.json";
-
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      setProjects(data);
-    };
-
-    fetchProjects();
-  }, []);
+  const { isDarkMode } = useContext(ThemeContext);
 
   return (
     <section id="Projects" className="projects-section">
@@ -26,9 +26,31 @@ const Projects = () => {
         }}
       />
       <div className="projects-container">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        <h1 className={isDarkMode ? "dark-mode-title" : "light-mode-title"}>
+          Projects
+        </h1>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          {projects.map((project) => (
+            <SwiperSlide key={project.id}>
+              <ProjectCard project={project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

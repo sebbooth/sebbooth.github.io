@@ -1,15 +1,63 @@
+@import "../../styles/theme-variables.scss";
+
+.projects-section {
+  height: 100vh;
+}
+
 .projects-container {
   z-index: 99;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
+  padding-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   color: #ffffff;
   font-family: sans-serif;
+
+  h1 {
+    position: relative;
+    font-size: 3rem;
+    z-index: 1;
+    transition: 0.5s all;
+    margin: 0px;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+  .dark-mode-title {
+    color: $d-text-color-1;
+  }
+
+  .light-mode-title {
+    color: black;
+  }
 }
 
 .projects-background {
   position: absolute;
+}
+
+.swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 70vh;
+  max-width: 70vw;
+
+  @media (max-width: 480px) {
+    max-height: 60vh;
+  }
+}
+
+.swiper-wrapper {
+  height: 70vh;
 }
