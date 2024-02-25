@@ -13,26 +13,18 @@ const ProjectCard = ({ project }) => {
         alt={project.title}
         className="project-image"
       />
-
-      <div
+      <a
         className={
           isDarkMode ? "project-info dark-info" : "project-info light-info"
         }
+        href={Object.values(project.links)[0]}
       >
         <div className="project-text">
           <div className="project-title">
             <h3>{project.title}</h3>
             {/* Links */}
-            {project.links.codeRepo && (
-              <a href={project.links.codeRepo} target="_blank" rel="noreferrer">
-                View Code
-              </a>
-            )}
-            {project.links.website && (
-              <a href={project.links.website} target="_blank" rel="nonreferrer">
-                View Website
-              </a>
-            )}
+            {project.links.codeRepo && <div>View Code</div>}
+            {project.links.website && <div>View Website</div>}
           </div>
           <p>{project.description}</p>
         </div>
@@ -45,7 +37,7 @@ const ProjectCard = ({ project }) => {
             </li>
           ))}
         </ul>
-      </div>
+      </a>
     </Tilt>
   );
 };

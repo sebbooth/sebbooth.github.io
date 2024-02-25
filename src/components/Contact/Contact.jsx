@@ -14,7 +14,7 @@ export const Contact = () => {
 
     emailjs
       .sendForm("service_kboohha", "template_r3zgcd9", form.current, {
-        publicKey: "x15zgivW-g8sVFtHD",
+        publicKey: "x15zgivW-g8sVFtHD", // OK to expose
       })
       .then(
         () => {
@@ -22,7 +22,9 @@ export const Contact = () => {
           toast.success("Sent!");
         },
         (error) => {
-          toast.error("Something went wrong...");
+          toast.error(
+            "Something went wrong... (You can try my email with the icon above)"
+          );
         }
       );
   };

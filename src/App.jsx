@@ -1,4 +1,4 @@
-import { Contact, About, Navbar, Projects, Timeline } from "./components";
+import { Contact, About, Hero, Navbar, Projects, Timeline } from "./components";
 import React from "react";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -7,6 +7,7 @@ function App() {
     <>
       <ThemeProvider>
         <Navbar />
+        <Hero />
         <About />
         <Timeline />
         <Projects />

@@ -44,7 +44,9 @@
   }
 
   .project-info {
+    text-decoration: none;
     transform: translateZ(30px);
+
     transition: 0.5s all;
 
     border-radius: 25px;
@@ -87,7 +89,7 @@
           display: inline-block;
           margin: 0px;
         }
-        a {
+        div {
           transition: 0.5s all;
 
           margin: 0px;
@@ -99,7 +101,7 @@
 
           margin: 0px 4px;
         }
-        a:hover {
+        div:hover {
           text-decoration: wavy underline;
         }
       }
