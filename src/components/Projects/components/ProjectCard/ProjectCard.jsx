@@ -18,6 +18,7 @@ const ProjectCard = ({ project }) => {
           isDarkMode ? "project-info dark-info" : "project-info light-info"
         }
         href={Object.values(project.links)[0]}
+        target="_blank"
       >
         <div className="project-text">
           <div className="project-title">

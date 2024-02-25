@@ -9,7 +9,9 @@ import projects from "../../data/projects.json";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./Projects.scss";
@@ -41,8 +43,11 @@ const Projects = () => {
             modifier: 1,
             slideShadows: false,
           }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
         >
           {projects.map((project) => (

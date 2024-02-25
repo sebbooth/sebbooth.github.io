@@ -46,6 +46,23 @@
 .swiper {
   width: 100%;
   overflow: visible;
+
+  --swiper-navigation-size: 5vh;
+  --swiper-navigation-sides-offset: 15vw;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+
+  --swiper-navigation-top-offset: 66vh;
+  --swiper-pagination-top: 63.5vh;
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 40vw;
+    left: 30vw;
+  }
 }
 
 .swiper-slide {
