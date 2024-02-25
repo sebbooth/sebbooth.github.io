@@ -14,6 +14,8 @@ const Navbar = () => {
             isDarkMode ? "navbar-links dark-links" : "navbar-links light-links"
           }
         >
+          <a href="#Hero">Home</a>
+          <span>/</span>
           <a href="#About">About</a>
           <span>/</span>
           <a href="#Timeline">Timeline</a>

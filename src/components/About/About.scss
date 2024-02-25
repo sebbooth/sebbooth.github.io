@@ -1,0 +1,99 @@
+#About {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all;
+
+  .terminal-text {
+    margin: 10px;
+    height: 60vh;
+    width: 70vw;
+    max-width: 1000px;
+    display: inline-block;
+
+    p {
+      font-family: "JetBrains Mono", monospace;
+      width: fit-content;
+      font-size: 1.2em;
+
+      white-space: wrap;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      width: 75vw;
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      width: 80vw;
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+    .terminal-cursor {
+      padding-right: 4px;
+      animation: cursor 0.4s step-end infinite alternate;
+      border-right: 2px solid;
+
+      @keyframes cursor {
+        50% {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.terminal {
+  border-radius: 8px 8px 0 0;
+  margin-top: 10vh;
+}
+.dark-bg {
+  background: #101010;
+}
+
+.light-bg {
+  background: #f0f0f0;
+}
+
+.terminal header {
+  background: #e0e8f0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.terminal header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.terminal header .green {
+  background: #3bb662;
+}
+
+.terminal header .yellow {
+  background: #e5c30f;
+}
+
+.terminal header .red {
+  background: #e75448;
+}
+
+.terminal-username {
+  color: green;
+}
+
+.terminal-path {
+  color: blue;
+}
