@@ -5,6 +5,8 @@
 }
 
 .projects-container {
+  overflow: hidden;
+
   z-index: 99;
   width: 100vw;
   height: 80vh;

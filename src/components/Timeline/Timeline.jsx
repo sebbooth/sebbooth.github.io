@@ -15,9 +15,9 @@ import timelineElements from "../../data/timeline.json";
 import "./Timeline.scss";
 
 const Timeline = () => {
-  let workIconStyle = { background: "#f0aaf0", color: "#000000" };
-  let schoolIconStyle = { background: "#aaf0f0", color: "#000000" };
-  let softwareIconStyle = { background: "#f0f0aa", color: "#000000" };
+  let workIconStyle = { background: "#107710", color: "#000000" };
+  let schoolIconStyle = { background: "#f04444", color: "#000000" };
+  let softwareIconStyle = { background: "#a0a0f0", color: "#000000" };
 
   return (
     <div id="Timeline">
@@ -27,6 +27,7 @@ const Timeline = () => {
         {timelineElements.map((element) => {
           return (
             <VerticalTimelineElement
+              className={element.icon}
               key={element.id}
               date={element.date}
               dateClassName="date"
