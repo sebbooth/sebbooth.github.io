@@ -33,10 +33,10 @@ export const Contact = () => {
     <div className="Contact" id="Contact">
       <div>
         <h1>Contact Me</h1>
-        <a href="https://github.com/sebbooth">
+        <a href="https://github.com/sebbooth" target="_blank">
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/sebbooth">
+        <a href="https://www.linkedin.com/in/sebbooth" target="_blank">
           <FaLinkedin />
         </a>
         <br />

@@ -1,5 +1,15 @@
 [
   {
+    "id": 0,
+    "title": "This Portfolio",
+    "description": "A (fairly) responsive portfolio website with 3D elements, light/dark themes, and a client-side mailing system through EmailJS. Built with Javascript, Sass, React, and a bunch of additional packages.",
+    "images": ["portfolio.png"],
+    "techStack": ["React", "Javascript", "Sass"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/sebbooth.github.io"
+    }
+  },
+  {
     "id": 1,
     "title": "OpenGL Demo Framework",
     "description": "Framework for testing and demonstrating different OpenGL rendering techniques including a model loader, terrain renderer and interactive components with ImGui.",
@@ -22,7 +32,7 @@
   {
     "id": 3,
     "title": "Creativity Support Tools",
-    "description": "Portfolio of work done for my class, CSC485E; \"Topics in Systems: Creativity Support Tools.\" Features a series of projects based around tangible user interfaces and supporting creative processes.",
+    "description": "Portfolio of work done for my class, CSC485E; \"Topics in Systems: Creativity Support Tools.\" Features a series of projects based around tangible user interfaces and supporting creative processes. The linked website includes detailed project reports, with code, schematics, as well as some video demos.",
     "images": ["creativitySupport.png"],
     "techStack": ["Python", "Arduino", "Electronics"],
     "links": {

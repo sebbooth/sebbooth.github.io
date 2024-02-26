@@ -29,10 +29,10 @@ const Hero = () => {
             isDarkMode ? "hero-links dark-icons" : "hero-links light-icons"
           }
         >
-          <a href="https://github.com/sebbooth">
+          <a href="https://github.com/sebbooth" target="_blank">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/sebbooth">
+          <a href="https://www.linkedin.com/in/sebbooth" target="_blank">
             <FaLinkedin />
           </a>
         </div>

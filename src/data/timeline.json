@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Software Developer – AI Trainer",
+    "title": "AI Trainer - Software Development",
     "location": "DataAnnotation",
     "description": "I generate diverse coding challenges to train AI chatbots, covering multiple programming paradigms and languages such as Python, C++, JavaScript, and React, while also crafting clear and accurate responses to simulate real-world coding interactions and conducting comprehensive assessments of AI-generated code for accuracy, efficiency, and adherence to requirements.",
     "date": "Jan 2024 - Present",
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Engineering B.Sc. in Computer Science",
     "location": "University of Victoria",
-    "description": "lorem ipsum",
+    "description": "Studied a variety of topics across computer science and software engineering, maintaining a 3.5 GPA while taking as many as 6 courses per term. Courses included Operating Systems, Computer Communications and Networks, Database Systems, Systems Analysis, and Computer Graphics.",
     "date": "Sep 2020 – Dec 2023",
     "icon": "school"
   },
