@@ -1,59 +1,56 @@
 @import "../../styles/theme-variables.scss";
-
 .hero-canvas-container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  padding-top: 10vh;
+  position: absolute;
+  width: 100vw;
   z-index: 0;
-  padding-top: 10vh;
-  height: 80vh;
-  width: 100vw;
 }
-
 .hero-container {
-  padding-top: 10vh;
+  align-items: center;
   color: white;
-
-  height: 80vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
+  height: 80vh;
   justify-content: flex-end;
-  align-items: center;
+  padding-top: 10vh;
+  width: 100vw;
 
   .hero-links {
-    pointer-events: none;
-    font-weight: 900;
-    font-size: 4rem;
-    z-index: 10;
     background-color: transparent;
+    font-size: 4rem;
+    font-weight: 900;
+    pointer-events: none;
+    z-index: 10;
 
     span {
       font-family: "Micro 5";
       font-size: 3rem;
     }
   }
-
   .dark-icons {
     a {
       color: $d-bg-color-1;
       pointer-events: auto;
       transition: 0.5s all;
-    }
-    a:hover {
-      color: $d-text-color-1;
+
+      &:hover {
+        color: $d-text-color-1;
+      }
     }
   }
-
   .light-icons {
     a {
       color: $l-bg-color-1;
       pointer-events: auto;
       transition: 0.5s all;
-    }
-    a:hover {
-      color: $l-text-color-1;
+
+      &:hover {
+        color: $l-text-color-1;
+      }
     }
   }
 }

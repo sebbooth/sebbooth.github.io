@@ -17,7 +17,7 @@ const Hero = () => {
         <SplineCanvas
           attributes={{
             scene:
-              "https://prod.spline.design/D5-XcPCHqJB7IpSR/scene.splinecode",
+              "https://prod.spline.design/Zagph5FizS7s7y0Z/scene.splinecode",
             style: { canvasStyle },
           }}
         />

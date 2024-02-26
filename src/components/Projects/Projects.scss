@@ -1,31 +1,28 @@
 @import "../../styles/theme-variables.scss";
-
 .projects-section {
   height: 110vh;
 }
-
 .projects-container {
-  overflow: hidden;
-
-  z-index: 99;
-  width: 100vw;
-  height: 90vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
   font-family: sans-serif;
+  height: 90vh;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+  width: 100vw;
+  z-index: 99;
 
   h1 {
-    position: relative;
     font-size: 3rem;
-    z-index: 1;
-    transition: 0.5s all;
     margin: 0px;
     margin-bottom: 20px;
+    position: relative;
+    transition: 0.5s all;
+    z-index: 1;
 
     @media (max-width: 768px) {
       margin-bottom: 0px;
@@ -34,52 +31,47 @@
   .dark-mode-title {
     color: $d-text-color-1;
   }
-
   .light-mode-title {
     color: black;
   }
 }
-
 .projects-background {
   min-height: 110vh;
-
   position: absolute;
 }
-
 .swiper {
-  width: 100%;
-  overflow: visible;
-
-  --swiper-navigation-size: 5vh;
   --swiper-navigation-sides-offset: 15vw;
-  --swiper-pagination-bullet-width: 10px;
-  --swiper-pagination-bullet-height: 10px;
-
+  --swiper-navigation-size: 5vh;
   --swiper-navigation-top-offset: 66vh;
+  --swiper-pagination-bullet-height: 10px;
+  --swiper-pagination-bullet-width: 10px;
   --swiper-pagination-top: 63.5vh;
+  overflow: visible;
+  width: 100%;
 
   .swiper-pagination {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     height: 5vh;
-    width: 40vw;
+    justify-content: center;
     left: 30vw;
+    width: 40vw;
   }
 }
-
 .swiper-slide {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   max-height: 70vh;
   max-width: 70vw;
 
-  @media (max-width: 480px) {
-    max-height: 60vh;
+  @media (max-width: 768px) {
+    height: 80%;
+  }
+  @media (max-width: 500px) {
+    height: 70%;
   }
 }
-
 .swiper-wrapper {
   height: 70vh;
 }

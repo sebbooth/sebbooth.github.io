@@ -1,22 +1,19 @@
 .preloader-container {
-  width: 100vw;
-  height: 100vh;
-  max-height: 0vh;
+  align-items: center;
+  animation: shrink linear 5s 1;
   background-color: #101010;
-  z-index: 999;
-  position: fixed;
-  overflow: hidden;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   font-family: "Pixelify Sans", sans-serif;
-  color: white;
-
-  animation: shrink linear 5s 1;
+  height: 100vh;
+  justify-content: center;
+  max-height: 0vh;
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
 }
-
 @keyframes shrink {
   0% {
     max-height: 100vh;

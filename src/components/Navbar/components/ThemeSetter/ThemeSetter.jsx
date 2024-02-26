@@ -7,7 +7,7 @@ const ThemeSetter = () => {
 
   return (
     <>
-      <button
+      <div
         aria-label="Toggle Dark Mode"
         className={isDarkMode ? "toggle dark-button" : "toggle light-button"}
         onClick={toggleDarkMode}
@@ -17,7 +17,7 @@ const ThemeSetter = () => {
         <div className={isDarkMode ? "toggle-left" : "toggle-right"}>
           <div className="toggle-switch"></div>
         </div>
-      </button>
+      </div>
     </>
   );
 };

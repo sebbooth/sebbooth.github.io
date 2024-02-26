@@ -1,55 +1,51 @@
 .toggle {
-  all: unset;
-  margin-right: 36px;
-  height: 36px;
-  border-radius: 36px;
-  transition: color 0.5s;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  border-radius: 36px;
+  display: flex;
+  height: 36px;
+  justify-content: space-between;
+  margin-right: 36px;
+  transition: color 0.5s;
+  width: 69px;
 
   p {
-    margin: 0px 4px;
     font-size: 12px;
+    margin: 0px 4px;
+  }
+  .toggle-left,
+  .toggle-right {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 90px;
+
+    .toggle-switch {
+      border-radius: 50%;
+      height: 30px;
+      left: 0px;
+      margin: 0px 3px;
+      position: relative;
+      transition: all 0.5s;
+      width: 30px;
+    }
+  }
+  .toggle-left {
+    .toggle-switch {
+      background: #ffffff;
+    }
+  }
+  .toggle-right {
+    transition: all 0.3s;
+
+    .toggle-switch {
+      background: #000000;
+      left: calc(100% - 58px);
+    }
   }
 }
-
 .dark-button {
   border: 2px solid #ffffff;
 }
-
 .light-button {
   border: 2px solid #000000;
-}
-
-.toggle-left,
-.toggle-right {
-  width: 90px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-}
-
-.toggle-switch {
-  position: relative;
-  margin: 0px 3px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  left: 0px;
-  transition: all 0.5s;
-}
-
-.toggle-left {
-  .toggle-switch {
-    background: #ffffff;
-  }
-}
-
-.toggle-right {
-  transition: all 0.3s;
-  .toggle-switch {
-    left: calc(100% - 58px);
-    background: #000000;
-  }
 }

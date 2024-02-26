@@ -1,46 +1,76 @@
 #About {
-  height: 80vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 90vh;
   justify-content: center;
-  align-items: center;
   transition: 0.5s all;
+}
+.terminal {
+  border-radius: 8px 8px 0 0;
+  margin-top: 10vh;
 
+  header {
+    background: #e0e8f0;
+    border-radius: 8px 8px 0 0;
+    height: 30px;
+    padding-left: 10px;
+
+    .button {
+      border-radius: 8px;
+      display: inline-block;
+      height: 12px;
+      margin: 10px 4px 0 0;
+      width: 12px;
+    }
+    .green {
+      background: #3bb662;
+    }
+    .yellow {
+      background: #e5c30f;
+    }
+    .red {
+      background: #e75448;
+    }
+  }
   .terminal-text {
-    margin: 10px;
-    height: 60vh;
-    width: 70vw;
-    max-width: 1000px;
     display: inline-block;
+    height: 60vh;
+    margin: 10px;
+    max-width: 1000px;
+    width: 70vw;
 
+    .terminal-username {
+      color: green;
+    }
+    .terminal-path {
+      color: blue;
+    }
     p {
       font-family: "JetBrains Mono", monospace;
-      width: fit-content;
       font-size: 1.2em;
-
-      white-space: wrap;
       overflow: hidden;
+      white-space: wrap;
+      width: fit-content;
     }
-
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       width: 75vw;
 
       p {
         font-size: 1em;
       }
     }
-
-    @media (max-width: 480px) {
+    @media (max-width: 550px) {
       width: 80vw;
 
       p {
-        font-size: 0.8em;
+        font-size: 0.7em;
       }
     }
     .terminal-cursor {
-      padding-right: 4px;
       animation: cursor 0.4s step-end infinite alternate;
       border-right: 2px solid;
+      padding-right: 4px;
 
       @keyframes cursor {
         50% {
@@ -50,50 +80,9 @@
     }
   }
 }
-
-.terminal {
-  border-radius: 8px 8px 0 0;
-  margin-top: 10vh;
-}
 .dark-bg {
   background: #101010;
 }
-
 .light-bg {
   background: #f0f0f0;
-}
-
-.terminal header {
-  background: #e0e8f0;
-  height: 30px;
-  border-radius: 8px 8px 0 0;
-  padding-left: 10px;
-}
-
-.terminal header .button {
-  width: 12px;
-  height: 12px;
-  margin: 10px 4px 0 0;
-  display: inline-block;
-  border-radius: 8px;
-}
-
-.terminal header .green {
-  background: #3bb662;
-}
-
-.terminal header .yellow {
-  background: #e5c30f;
-}
-
-.terminal header .red {
-  background: #e75448;
-}
-
-.terminal-username {
-  color: green;
-}
-
-.terminal-path {
-  color: blue;
 }
