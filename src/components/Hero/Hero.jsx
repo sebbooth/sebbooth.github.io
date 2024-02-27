@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { SplineCanvas } from "..";
+import { SplineCanvas } from "../";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "./Hero.scss";
-
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   const { isDarkMode } = useContext(ThemeContext);

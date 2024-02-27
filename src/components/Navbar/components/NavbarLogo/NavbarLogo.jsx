@@ -1,5 +1,5 @@
-import React from "react";
 import { SplineCanvas } from "../../../";
+
 import "./NavbarLogo.scss";
 
 const NavbarLogo = (props) => {

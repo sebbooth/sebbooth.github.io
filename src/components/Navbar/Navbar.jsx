@@ -1,7 +1,8 @@
 import { useContext } from "react";
+import { slide as Menu } from "react-burger-menu";
 import { ThemeSetter, NavbarLogo } from "./components";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { slide as Menu } from "react-burger-menu";
+
 import "./Navbar.scss";
 
 const Navbar = () => {

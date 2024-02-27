@@ -1,19 +1,16 @@
 import { useContext } from "react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { ProjectCard } from "./components";
 import { SplineCanvas } from "../";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-import projects from "../../data/projects.json";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
+import projects from "../../data/projects.json";
 import "./Projects.scss";
 
 const Projects = () => {

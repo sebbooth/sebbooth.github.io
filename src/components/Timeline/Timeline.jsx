@@ -1,17 +1,13 @@
-import React from "react";
-
-import { IoSchool as SchoolIcon } from "react-icons/io5";
-import { MdWork as WorkIcon } from "react-icons/md";
-import { RiComputerLine as SoftwareIcon } from "react-icons/ri";
-
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { IoSchool as SchoolIcon } from "react-icons/io5";
+import { MdWork as WorkIcon } from "react-icons/md";
+import { RiComputerLine as SoftwareIcon } from "react-icons/ri";
 
 import timelineElements from "../../data/timeline.json";
-
 import "./Timeline.scss";
 
 const Timeline = () => {

@@ -1,5 +1,7 @@
-import React, { createContext, useState } from "react";
-import "../index.scss"; // Your main SCSS file
+import { createContext, useState } from "react";
+
+import "../index.scss";
+
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {

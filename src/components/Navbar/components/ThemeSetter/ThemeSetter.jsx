@@ -1,6 +1,7 @@
-import "./ThemeSetter.scss";
-import { ThemeContext } from "../../../../contexts/ThemeContext";
 import { useContext } from "react";
+import { ThemeContext } from "../../../../contexts/ThemeContext";
+
+import "./ThemeSetter.scss";
 
 const ThemeSetter = () => {
   const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
