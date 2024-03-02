@@ -1,18 +1,9 @@
-import {
-  Contact,
-  About,
-  Hero,
-  Navbar,
-  Projects,
-  Timeline,
-  Preloader,
-} from "./components";
+import { Contact, About, Hero, Navbar, Projects, Timeline } from "./components";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
     <>
-      <Preloader />
       <ThemeProvider>
         <Navbar />
         <Hero />
