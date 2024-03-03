@@ -6,15 +6,11 @@ const SplineCanvas = (props) => {
   const { attributes } = props;
   const [isLoading, setIsLoading] = useState(true);
 
-  function onLoad() {
-    setIsLoading(false);
-  }
-
   return (
     <>
       <Suspense fallback={<Preloader />}>
         {isLoading && <Preloader />}
-        <Spline {...attributes} onStart={onLoad} />
+        <Spline {...attributes} onLoad={() => setIsLoading(false)} />
       </Suspense>
     </>
   );
