@@ -1,5 +1,8 @@
 import "./Preloader.scss";
 
+// Credits : Pita : https://codepen.io/felipedefarias
+// https://codepen.io/felipedefarias/pen/dyZXvz
+
 const Preloader = () => {
   return (
     <div className="preloader-container">

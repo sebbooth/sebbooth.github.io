@@ -1,16 +1,9 @@
-.text-logo {
+.logo {
   cursor: grab;
-  height: 10vh;
   margin: 0px;
-  width: 10vh;
-
-  .logo {
-    flex-shrink: 0;
-    position: absolute;
-    z-index: 55;
-  }
-  .hidden {
-    opacity: 0;
-    z-index: 40;
-  }
+  max-height: 10vh;
+  max-width: 10vh;
+  min-height: 10vh;
+  min-width: 10vh;
+  z-index: 55;
 }
