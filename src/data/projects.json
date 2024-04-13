@@ -1,5 +1,15 @@
 [
   {
+    "id": -1,
+    "title": "Voxel Ray-Tracing Engine",
+    "description": "I'm currently building a graphics/game engine which implements a sparse voxel octree traversal raycaster. I've opted to use Vulkan for this project to gain a better understanding of low-level computer graphics, and have tons of ideas for this project moving forward. The readme for this on github contains a devlog in which I am tracking my progress.",
+    "images": ["voxel.png"],
+    "techStack": ["C++", "Vulkan", "3D Graphics"],
+    "links": {
+      "codeRepo": "https://github.com/sebbooth/vkEngine"
+    }
+  },
+  {
     "id": 0,
     "title": "This Portfolio",
     "description": "A (fairly) responsive portfolio website with 3D elements, light/dark themes, and a client-side mailing system through EmailJS. Built with Javascript, Sass, React, and a bunch of additional packages.",
